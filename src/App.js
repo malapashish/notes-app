@@ -31,6 +31,7 @@ const App = () =>{
     }
 
     const noteUpdate = (id , noteObject) => {
+        if(id){
         firebase
                 .firestore()
                 .collection('notes')
@@ -40,6 +41,7 @@ const App = () =>{
                     body : noteObject.body , 
                     timestamp : firebase.firestore.FieldValue.serverTimestamp()
                 });
+        }
     }
 
     const newNote = async (title) => {
@@ -82,6 +84,7 @@ const App = () =>{
                 .collection('notes')
                 .doc(note.id)
                 .delete();
+         
 
     }
     
@@ -103,7 +106,12 @@ const App = () =>{
                     notes = {notes}
                     noteUpdate = {noteUpdate}></EditorComponent>
                     
-                    : null
+                    : 
+                    null
+                    // <div>
+                    //     Hello World!!
+                    // </div>
+
                 }
             </div>
         )
