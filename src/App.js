@@ -3,8 +3,14 @@ import firebase from 'firebase/app';
 
 import './App.css';
 
+import notesImage from './images/notes.svg';
+import twitterIcon from './images/twitter.svg';
+import instaIcon from './images/insta.svg';
+import linkedinIcon from './images/linkedin.svg';
+
 import EditorComponent from './editor/editor';
 import SidebarComponent from './sidebar/sidebar';  
+ 
 
 const App = () =>{
     const [ selectedNoteIndex , setSelectedNoteIndex ] = useState(null);
@@ -88,6 +94,18 @@ const App = () =>{
 
     }
     
+    const Footer = () => {
+        return(
+            <div className = 'footer'>
+                Follow On
+                <div className = 'social_media'>
+                    <img src = {twitterIcon} alt = "Twitter Icon"  className = 'icons' />
+                    <img src = {instaIcon} alt = "Instagram Icon" className = 'icons' />
+                    <img src = {linkedinIcon} alt = "Linkedin Icon" className = 'icons' />
+                </div>
+            </div>
+        )
+    }
 
     return (
             <div className = "app-container"> 
@@ -106,13 +124,14 @@ const App = () =>{
                     notes = {notes}
                     noteUpdate = {noteUpdate}></EditorComponent>
                     
-                    : 
-                    null
-                    // <div>
-                    //     Hello World!!
-                    // </div>
+                    :  
+                    <div className = 'notes_section'>
+                        <img src = {notesImage} alt = 'Notes Images' className = 'notes_img' />
+                        <p>Welcome to <span style = {{color : '#29487d'}} className = 'app_name' >Notes App</span></p>
+                    </div>
 
                 }
+                <Footer />
             </div>
         )
 }

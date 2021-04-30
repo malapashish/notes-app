@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 html,
 body {
   height: 100%;
@@ -37,4 +39,51 @@ body {
   position: absolute;
   top: 50px;
   left: calc(50% - 165px);
+}
+
+.notes_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.notes_section p {
+  font-size: 150%;
+}
+
+.notes_img {
+  width: 40%;
+}
+
+.app_name {
+  font-weight: bold;
+}
+
+.footer {
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #29487d;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.icons {
+  padding-top: 10px;
+  width: 5%;
+}
+
+.social_media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
