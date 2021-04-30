@@ -50,11 +50,11 @@ body {
 }
 
 .notes_section p {
-  font-size: 150%;
+  font-size: 30px;
 }
 
 .notes_img {
-  width: 40%;
+  width: 450px;
 }
 
 .app_name {
@@ -86,4 +86,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 600px) {
+  .notes_section p {
+    font-size: 10px;
+  }
+
+  .notes_img {
+    width: 200px;
+  }
 }
