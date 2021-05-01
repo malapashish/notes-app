@@ -29,10 +29,10 @@ const styles = theme => ({
   },
   sidebarContainer: {
     marginTop: '0px',
-    width: '300px',
+    width: '700px',
     height: '100%',
     boxSizing: 'border-box',
-    float: 'left',
+    float: 'right',
     overflowY: 'scroll',
     overflowX: 'hidden'
   },
@@ -52,7 +52,7 @@ const styles = theme => ({
     backgroundColor: '#28787c',
     borderRadius: '0px',
     color: 'white'
-  }
+  } 
 });
 
 export default styles;

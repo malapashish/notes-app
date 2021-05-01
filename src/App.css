@@ -15,7 +15,6 @@ body {
 }
 .app-container {
   height: 100%;
-  box-sizing: border-box;
 }
 .quill {
   height: 100%;
@@ -89,6 +88,11 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .app-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .notes_section p {
     font-size: 10px;
   }

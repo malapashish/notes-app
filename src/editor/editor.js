@@ -42,8 +42,7 @@ const EditorComponent = (props) => {
     } , 1500);
 
     return(
-        <div className = {props.classes.editorContainer}>
-                <BorderColorIcon className = {props.classes.editIcon}></BorderColorIcon>
+        <div className = {props.classes.editorContainer}> 
                 <input
                 className = {props.classes.titleInput}
                 placeholder = 'Note title...'

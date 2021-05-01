@@ -112,6 +112,7 @@ const App = () =>{
                 <SidebarComponent 
                 selectedNoteIndex = {selectedNoteIndex} 
                 notes = {notes}
+                selectedNote = {selectedNote}
                 deleteNote = {deleteNote}
                 selectNote = {selectNote}
                 newNote = {newNote}
@@ -128,6 +129,7 @@ const App = () =>{
                     <div className = 'notes_section'>
                         <img src = {notesImage} alt = 'Notes Images' className = 'notes_img' />
                         <p>Welcome to <span style = {{color : '#29487d'}} className = 'app_name' >Notes App</span></p>
+                        <p>Please select a note or create new one</p>
                     </div>
 
                 }

@@ -43,6 +43,9 @@ const SidebarComponent = (props) => {
                 {addingNote ? "Cancel" : "New Note"}
               </Button>
               {
+                  props.selectNote ? console.log("Selected") : console.log("Not Selected")
+              }
+              {
                     addingNote ? 
                   <div>
                       <input 

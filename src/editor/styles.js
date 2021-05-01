@@ -18,18 +18,13 @@ const styles = theme => ({
     backgroundColor: '#29487d',
     color: 'white',
     paddingLeft: '50px'
-  },
-  editIcon: {
-    position: 'absolute',
-    left: '310px',
-    top: '12px',
-    color: 'white',
-    width: '10',
-    height: '10'
-  },
+  }, 
   editorContainer: {
     height: '100%',
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
+    // width : '73.4%'
+    width: '1128px',
+    marginBottom: '20px'
   }
 });
 
