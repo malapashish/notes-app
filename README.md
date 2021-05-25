@@ -11,7 +11,7 @@
 * [Status](#status)
 
 ## General info
-The project is a simple notes taking application. The application allows user to create , edit , delete a note. Fireabase is used to store the notes. For note taking part ract-quill is used. Firebase is used as a backend. For styling along with pure CSS , material-ui/core and material-ui/core are used.
+The project is a simple notes taking application. The application allows user to create , edit , delete a note. Fireabase is used to store the notes. For note taking part react-quill is used. Firebase is used as a backend. For styling along with pure CSS , material-ui/core and material-ui/core are used.
 
 ## Screenshots
 
