@@ -1,4 +1,4 @@
-# Chatz
+# Notes App
 > A simple notes taking application created using React , Firebase<br />
 > [Live Demo](https://ash-moviezz.netlify.app/)
 
